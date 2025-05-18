@@ -47,7 +47,7 @@ public class Preferences
 	}
 
 	public int getSocksPort() {
-		return prefs.getInt(SOCKS_PORT, 1080);
+		return prefs.getInt(SOCKS_PORT, 2500);
 	}
 
 	public void setSocksPort(int port) {
@@ -77,7 +77,7 @@ public class Preferences
 	}
 
 	public String getDnsIpv4() {
-		return prefs.getString(DNS_IPV4, "8.8.8.8");
+		return prefs.getString(DNS_IPV4, "127.0.0.1:2501");
 	}
 
 	public void setDnsIpv4(String addr) {
