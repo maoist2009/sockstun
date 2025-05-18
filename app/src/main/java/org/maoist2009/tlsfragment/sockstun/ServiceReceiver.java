@@ -7,7 +7,7 @@
  ============================================================================
  */
 
-package hev.sockstun;
+package org.maoist2009.tlsfragment.sockstun;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
