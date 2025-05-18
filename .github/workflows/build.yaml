@@ -38,12 +38,12 @@ jobs:
             ref_name="${{ github.ref_name }}"
           fi
           echo "ref_name=${ref_name}" >> $GITHUB_ENV
-          cp app/build/outputs/apk/release/org.maoist2009.tlsfragment.suckstun-*-release.apk org.maoist2009.tlsfragment.suckstun-${ref_name}-release.apk
+          cp app/build/outputs/apk/release/org.maoist2009.tlsfragment.sockstun-*-release.apk org.maoist2009.tlsfragment.sockstun-${ref_name}-release.apk
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
-          name: org.maoist2009.tlsfragment.suckstun-${{ env.ref_name }}-release.apk
-          path: org.maoist2009.tlsfragment.suckstun-${{ env.ref_name }}-release.apk
+          name: org.maoist2009.tlsfragment.sockstun-${{ env.ref_name }}-release.apk
+          path: org.maoist2009.tlsfragment.sockstun-${{ env.ref_name }}-release.apk
           if-no-files-found: error
           retention-days: 1
 
@@ -61,12 +61,12 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           path: release
-          pattern: "org.maoist2009.tlsfragment.suckstun-*"
+          pattern: "org.maoist2009.tlsfragment.sockstun-*"
           merge-multiple: true
       - name: Upload artifacts
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          for i in release/org.maoist2009.tlsfragment.suckstun-*; do
+          for i in release/org.maoist2009.tlsfragment.sockstun-*; do
             gh release upload ${{ github.event.release.tag_name }} $i
           done

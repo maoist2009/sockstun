@@ -9,7 +9,7 @@ A simple and lightweight VPN over socks5 proxy for Android. It is based on a hig
     height="80">](https://github.com/heiher/sockstun/releases)
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
     alt="Get it on F-Droid"
-    height="80">](https://f-droid.org/packages/org.maoist2009.tlsfragment.suckstun)
+    height="80">](https://f-droid.org/packages/org.maoist2009.tlsfragment.sockstun)
 
 ## Features
 

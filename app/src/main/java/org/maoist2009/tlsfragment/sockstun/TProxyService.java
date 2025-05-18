@@ -33,8 +33,8 @@ public class TProxyService extends VpnService {
 	private static native void TProxyStopService();
 	private static native long[] TProxyGetStats();
 
-	public static final String ACTION_CONNECT = "org.maoist2009.tlsfragment.suckstun.CONNECT";
-	public static final String ACTION_DISCONNECT = "org.maoist2009.tlsfragment.suckstun.DISCONNECT";
+	public static final String ACTION_CONNECT = "org.maoist2009.tlsfragment.sockstun.CONNECT";
+	public static final String ACTION_DISCONNECT = "org.maoist2009.tlsfragment.sockstun.DISCONNECT";
 
 	static {
 		System.loadLibrary("hev-socks5-tunnel");
